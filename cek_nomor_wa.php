@@ -21,9 +21,9 @@ function check_nomor($nomor){
 	}
 }
 mulaibot:
-echo "Masukan nomor awal  : ";
+echo "First Range Number (ex : 6287790120800) : ";
 $awal = trim(fgets(STDIN));
-echo "Masukan nomor akhir : ";
+echo "Last Range Number  (ex : 6287790120900) : ";
 $akhir = trim(fgets(STDIN));
 
 if($akhir <= $awal){
@@ -50,4 +50,5 @@ if($akhir <= $awal){
 		$a++;
 	}
 }
+goto mulaibot;
 ?>
